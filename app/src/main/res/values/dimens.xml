@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">2dp</dimen>
+    <dimen name="main_fab_margin">16dp</dimen>
+    <dimen name="custom_card_elevation">10dp</dimen>
+    <dimen name="custom_card_cornerradius">10dp</dimen>
+    <dimen name="custom_card_iv">100dp</dimen>
+    <dimen name="custom_card_model_textsize">18sp</dimen>
+    <dimen name="custom_card_dbl_textsize">16dp</dimen>
+    <dimen name="custom_card_dbl_color_textsize">16sp</dimen>
+    <dimen name="custom_card_tv">10dp</dimen>
+    <dimen name="custom_card_tv_color_wdith">200dp</dimen>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:fitsSystemWindows="true"
+    android:background="#BAADAD"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim ="@color/design_default_color_primary_dark"
+            app:expandedTitleMarginStart="10dp"
+            app:expandedTitleMarginEnd="26dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/homeToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            app:layout_collapseMode="pin"
+            >
+        </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/float_ds"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/homeAddCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/main_fab_margin"
+        android:contentDescription="@string/float_ds"
+
+        android:src="@drawable/ic_car" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+<!--
+take all size of window
+android:fitsSystemWindows="true"
+
+element fixed in toolbar
+ app:layout_collapseMode="pin"
+
+
+    -->

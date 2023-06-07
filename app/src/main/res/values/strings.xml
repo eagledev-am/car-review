@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CarStore1</string>
+    <string name="details_et_model_hint">Details</string>
+    <string name="details_et_color_hint">color</string>
+    <string name="details_et_dp1_hint">Distance Per Letter</string>
+    <string name="details_et_description_hint">Description</string>
+    <string name="float_ds">press</string>
+    <string name="content_ds">enter</string>
+</resources>
